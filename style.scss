@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  // border: green solid;
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 {
+    color: rgb(8, 105, 8);
+  }
+
+  nav {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+  }
+}
+
+.ProdutosDisponiveis {
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  article {
+    border: solid #16a34a;
+    width: 21%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15%;
+  }
+  p {
+    text-align: center;
+    width: 90%;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  button {
+    margin-bottom: 2rem;
+    padding: 0.55rem;
+  }
+}
