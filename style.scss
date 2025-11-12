@@ -5,7 +5,6 @@
 }
 
 header {
-  // border: green solid;
   display: flex;
   height: 10vh;
   justify-content: space-around;
@@ -32,7 +31,6 @@ header {
 }
 
 .CaixaLogo {
-  border: solid red;
   display: flex;
   width: 18vw;
   justify-content: space-between;
@@ -45,14 +43,37 @@ header {
 
 .apresentaçao {
   border: solid;
-  height: 70vh;
-  width: 50vw;
-
-
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
 
+  section {
+    border: solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h2 {
+      font-size: 3.75rem;
+      width: 40vw;
+    }
+
+    p {
+      border: solid red;
+      font-size: 1.25rem;
+      width: 38vw;
+    }
+  }
+  .BoxButtonsApresentacao {
+    width: 30vw;
+    border: solid blue;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      cursor: pointer; // Fica com a mãozinha do click
+      padding: 25px 30px;
+    }
+  }
 }
 
 .ProdutosDisponiveis {
@@ -64,7 +85,7 @@ header {
   article {
     background-color: #f3f5f8;
     border: solid #16a34a;
-    width: 21%;
+    width: 20%;
     height: 55vh;
     display: flex;
     flex-direction: column;
@@ -78,7 +99,7 @@ header {
   }
 
   img {
-    width: 70%;
+    width: 100%;
   }
 
   button {
@@ -86,5 +107,71 @@ header {
     padding: 0.55rem;
     background-color: #16a34a;
     // border-radius: 15%;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    height: 20vh;
+    flex-direction: column;
+  }
+
+  nav {
+    border: solid red;
+    width: 70vw;
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .CaixaLogo {
+    width: 50%;
+
+    h1 {
+      font-size: 2rem;
+    }
+    img {
+      width: 50vw;
+    }
+  }
+
+  .apresentaçao {
+    flex-direction: column;
+    height: 120vh;
+    align-items: center;
+
+    section {
+      display: flex;
+      height: 40vh;
+      justify-content: space-evenly;
+
+      h2 {
+        font-size: 2rem;
+        width: 100%;
+        border: solid;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .BoxButtonsApresentacao {
+      width: 100%;
+      justify-content: space-evenly;
+
+      button {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ProdutosDisponiveis {
+    flex-direction: column;
+    article {
+      width: 50%;
+    }
   }
 }
