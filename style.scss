@@ -6,9 +6,10 @@
 
 header {
   display: flex;
-  height: 10vh;
+  height: 12vh;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 2px solid #b4aeae;
 
   nav {
     display: flex;
@@ -42,12 +43,11 @@ header {
 }
 
 .apresentaçao {
-  border: solid;
   display: flex;
   justify-content: space-around;
 
   section {
-    border: solid yellow;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -58,16 +58,50 @@ header {
     }
 
     p {
-      border: solid red;
       font-size: 1.25rem;
       width: 38vw;
     }
   }
+
   .BoxButtonsApresentacao {
-    width: 30vw;
-    border: solid blue;
     display: flex;
     justify-content: space-between;
+    width: 34vw;
+    height: 15vh;
+    align-items: center;
+
+    .ButtonDoar {
+      color: #ffffff;
+      background-color: #16a34a;
+      border-radius: 5px;
+
+      border: none;
+      width: 13vw;
+      height: 8vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 0.9rem;
+      img {
+        width: 1.2vw;
+      }
+    }
+
+    .ButtonAdquirir {
+      font-size: 0.9rem;
+      color: #2563eb;
+      border-radius: 5px;
+      width: 13vw;
+      height: 8vh;
+      border: 1px solid #2563eb;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      img {
+        width: 1.2vw;
+      }
+    }
 
     button {
       cursor: pointer; // Fica com a mãozinha do click
@@ -76,11 +110,97 @@ header {
   }
 }
 
+.Dados {
+  height: 20vh;
+  background-color: #f3f5f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div {
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  h3 {
+    color: #16a34a;
+    font-size: 1.8rem;
+  }
+  p {
+    color: #4b5563;
+  }
+}
+
+.ComoFunciona {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  padding-top: 5%;
+
+  h3 {
+    font-size: 3rem;
+    color: #1f2937;
+  }
+
+  .Facilidade {
+    font-size: 1.2rem;
+    color: #1f2937;
+  }
+}
+.BoxPassoAPasso {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: space-evenly;
+
+  .Informacoes {
+    background-color: #f3f5f8;
+    width: 30vw;
+    height: 34vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      color: #09090b;
+      font-weight: 600;
+    }
+  }
+  .ParaDoadores {
+    color: #16a34a;
+    //  font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .ParaAdquirentes {
+    color: #2563eb;
+    font-size: 1.5rem;
+    //font-family: "Noto Sans", sans-serif;
+  }
+}
+
 .ProdutosDisponiveis {
   height: 70vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+
+  h3 {
+  }
+  .Categorias {
+  }
 
   article {
     background-color: #f3f5f8;
@@ -91,7 +211,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    // border-radius: 10%;
+    border-radius: 3%;
   }
   p {
     text-align: center;
@@ -106,10 +226,10 @@ header {
     margin-bottom: 2rem;
     padding: 0.55rem;
     background-color: #16a34a;
-    // border-radius: 15%;
+    border: none;
+    border-radius: 3px;
   }
 }
-
 @media (max-width: 900px) {
   header {
     height: 20vh;
